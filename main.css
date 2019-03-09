@@ -11,9 +11,32 @@
 
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-family: 'Playfair Display', serif;
+
 }
+
+/*h1{
+  　font-family: 'Srisakdi', cursive;
+}*/
+
+.site-title{
+  font-size: 1.6em;
+}
+
+.title-font{
+  font-family: 'Satisfy', cursive;
+
+}
+
+.my-name{
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+/*　font-family: 'Srisakdi', cursive;*/
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -88,12 +111,16 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+
+
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
+
+
 }
 
 #top-img{
@@ -115,7 +142,7 @@ body {
   color:rgba(34, 49, 52, 1);
   height: 100%;
   width: 100%;
-  padding: 70px 20px 100px;
+  padding: 20px 20px 100px;
 
   /*display: inline-block;*/
 }
@@ -127,7 +154,7 @@ body {
   line-height: 94px;
 }
 .contact-left{
-  margin-top: 50px;
+  margin-top: 20px;
 /*  width: 500px;*/
 /*  float: left;*/
   background-color: white;
@@ -147,7 +174,7 @@ body {
 }
 
 .contact-right{
-  margin-top: 50px;
+  margin-top: 20px;
 /*  width: 500px;*/
 /*  height: 200px;*/
 /*  float: right;*/
@@ -198,7 +225,7 @@ body {
 }
 
 .to-put{
-  width: 270px;
+  width: 100%;
   margin-left: 5px;
 }
 
@@ -275,6 +302,8 @@ border-collapse: separate;
 }
 
 /* ------------------------インスタロゴ------------------------ */
+
+
 .insta_btn2{/*ボタンの下地*/
   color: #FFF;/*文字・アイコン色*/
   border-radius: 7px;/*角丸に*/
@@ -291,9 +320,9 @@ border-collapse: separate;
   overflow: hidden;/*はみ出た部分を隠す*/
   text-decoration:none;/*下線は消す*/
   /*float: left;*/
-  /*margin-left: 20px;*/
-/*  margin-top: 30px;
-  margin-right: 40px;*/
+/*  margin-left: 40px;*/
+  margin-top: 10px;
+/*  margin-right: 40px;*/
 }
 
 .insta_btn2:before{/*グラデーション②*/
@@ -342,8 +371,9 @@ border-collapse: separate;
   overflow: hidden;/*はみ出た部分を隠す*/
   text-decoration:none;/*下線は消す*/
  /* float: left;*/
-/*  margin-top: 30px;
-  margin-left: 40px;*/
+  margin-top: 10px;
+/*  margin-left: 40px;*/
+
 }
 
 .twitter_btn2:before{/*グラデーション②*/
@@ -372,4 +402,19 @@ border-collapse: separate;
   -webkit-transform: rotateX(360deg);
   -ms-transform: rotateX(360deg);
   transform: rotateX(360deg);
+}
+
+#profile-text{
+  margin: auto;
+}
+
+
+
+
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
 }
