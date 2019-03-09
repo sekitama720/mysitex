@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="lib/common.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Satisfy|Sawarabi+Mincho" rel="stylesheet">
     <!-- 表示の微調整用 -->
     <style>
       .bd-placeholder-img {
@@ -29,7 +30,8 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
+        }
+      
     </style>
 
     <!-- 外部CSS/JavaScript -->
@@ -40,14 +42,14 @@
     <!-- ヘッダー -->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#"><span class="fas fa-film mr-1"></span>Movierium</a>
+        <a class="navbar-brand title-font site-title" href="#">Movierium</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+              <a class="nav-link" href="#">HOME<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contents">CONTENTS</a>
@@ -76,32 +78,32 @@
     <div class="carousel-inner">
       <div class="carousel-item">
         <!--  -->
-        <img src="./img.jpg" >
+        <img src="./contents02.jpg" >
         <div class="container">
           <div class="carousel-caption text-left">
-            <h1>Example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            <h1 class="title-font">Western films.</h1>
+            <p>There are many things having high entertainment characteristics. An action and CG are the top level. A scale is huge.</p>
+            <p><a class="btn btn-secondary " href="#" role="button">Learn more</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect fill="#777" width="100%" height="100%"></rect></svg>
+        <img src="./contents01.jpg" >
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            <h1 class="title-font">Japanese films.</h1>
+            <p>A heavy human being drama. Deep direction. Because a Japanese made it, a Japanese turn.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Learn more</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect fill="#777" width="100%" height="100%"></rect></svg>
+        <img src="./contents03.jpg" >
         <div class="container">
           <div class="carousel-caption text-right">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            <h1 class="title-font">Animation films.</h1>
+            <p>The heart-like story that it was complicated, and caught the depth of the heart. I can express feelings by not only lines but also the scenery</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Learn more</a></p>
 
           </div>
         </div>
@@ -128,6 +130,9 @@
     <a name="contents"></a>
     <hr class="featurette-divider">
 
+    <div class="contact_title">
+      <h1 class="text-muted">CONTENTS</h1>
+      </div>
     <!-- Three columns of text below the carousel -->
     <div class="row" >
       <div class="col-lg-4">
@@ -156,39 +161,24 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7 rows mb-3">
-        <h2 class="featurette-heading">PROFILE<span class="text-muted"><br>About the Author</span></h2>
-        <table>
-            <!-- <caption>管理人プロフィール</caption> -->
-            <caption>About the Author</caption>
-            <tr>
-              <th>Name：</th>
-              <td>Taiki</td>
-            </tr>
-            <tr>
-              <th>Hometown：</th>
-              <td>Japan/Saitama</td>
-            </tr>
-            <tr>
-              <th>Home school：</th>
-              <td>Kinki University / Agriculture</td>
-            </tr>
-            <tr>
-              <th>Hobbies：</th>
-              <td>Programming,Movies,Camping</td>
-            </tr>
-          </table>
-          <a href="https://twitter.com/sekitama7" class="twitter_btn2 col-sm-6">
+      <div class="col-md-7 row mb-3" id="profile-text">
+        <h2 class="featurette-heading"><span class="text-muted">PROFILE</span><br><span class="title-font my-name">TAIKI SEKINE</span></h2>
+        <p class="lead ml-3">Born in 1994. Grew up in Saitama. Living in Nara. Love movies, prpgramming, illustration, and camping.</p>
+          <div class="col-sm-6">
+          <a href="https://twitter.com/sekitama7" class="twitter_btn2">
             <i class="fab fa-twitter"></i> <span>Twitter</span>
           </a>
-          <a href="https://www.instagram.com/sekinesaitama" class="insta_btn2 col-sm-6">
+          </div>
+          <div class="col-sm-6">
+          <a href="https://www.instagram.com/sekinesaitama" class="insta_btn2" >
             <i class="fab fa-instagram"></i> <span>Instagram</span>
           </a>
+          </div>
       </div>
 
 
       <div class="col-md-5">
-        <img src="./img.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width='500' height='500'>
+        <img src="./profile.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width='500' height='500'>
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"></rect><text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text></svg> -->
       </div>
     </div>
@@ -219,7 +209,7 @@
             <p>・オススメポイント（名ゼリフ、感動シーンなど...）</p>
             <textarea class="to-put" name="name" rows="4" cols="40"></textarea>
             <div>
-              <div class="contact-btn to-btn" onClick="disp()" >送信</div>
+               <p><a class="btn btn-secondary" href="#" role="button">送信</a></p>
             </div>
           </div>
         </div>
@@ -229,7 +219,7 @@
             <h1>管理人に問合わせ</h1>
             <h2>※以下よりメールでご連絡下さい</h2>
             <div>
-              <span class="contact-btn" onClick="disp()">お問合わせ</span>
+              <p><a class="btn btn-secondary" href="#" role="button">お問い合わせ</a></p>
             </div>
           </div>
         </div>
@@ -246,11 +236,12 @@
 
 
   <!-- FOOTER -->
-  <footer class="container bg-dark">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-  </footer>
-</main>
+  <footer class="blog-footer">
+  <p>Movierium 2019.3</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
 
     <!-- フッター -->
 
