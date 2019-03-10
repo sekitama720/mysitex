@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movierium</title>
+    <!-- jQueryの読み込み -->
+    <script src="lib/jquery.min.js"></script>
+    <!-- bootstrapの読み込み -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/common.css">
+    <!-- fontawesomeの読み込み -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+    <!-- fonts.googleの読み込み -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Satisfy|Sawarabi+Mincho" rel="stylesheet">
+    <!-- 表示の微調整用 -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+      .table{
+          font-size: 5px;
+        }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        }
+      @media (max-width: 768px){
+        .film-title{
+          font-size: 1.4rem;
+        }
+        .top-img1{
+          background-position: -150px;
+        }
+        .top-img2{
+          background-position: center;
+        }
+        .top-img3{
+          background-position: right;
+      }
+    </style>
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand title-font site-title" href="index.html">Movierium</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html#contents">CONTENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#profile">PROFILE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <!-- メイン -->
+  <main role="main">
+
+    <!-- メインスライドショー -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active top-img1">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1 class="title-font">Western films.</h1>
+              <p>There are many things having high entertainment characteristics. An action and CG are the top level. A scale is huge.</p>
+              <p><a class="btn btn-secondary " href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item top-img2">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="title-font">Japanese films.</h1>
+              <p>A heavy human being drama. Deep direction. Because a Japanese made it, a Japanese turn.</p>
+              <p><a class="btn btn-secondary" href="jp_film.html" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item top-img3">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1 class="title-font">Animation films.</h1>
+              <p>The heart-like story that it was complicated, and caught the depth of the heart. I can express feelings by not only lines but also the scenery</p>
+              <p><a class="btn btn-secondary" href="anime_film.html" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>  
+
+    <!-- メインコンテンツ -->
+    <div class="container marketing">
+
+      <!-- メインコンテンツ -->
+      <a name="contents"></a>
+      <hr class="featurette-divider">
+
+      <div class="contact_title">
+        <h1 class="text-muted">洋画</h1>
+      </div>
+      <div class="row mb-2"> 
+        <!-- コンテンツ -->
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 film-title">グレイテスト・ショーマン</h3>
+              <div class="mb-1 text-muted">2019-03-01</div>
+              <div class="star-rating mb-1">
+                <div class="star-rating-front" style="width: 100%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <p class="card-text mb-auto">2017年公開/アメリカ合衆国/監督:マイケル・グレイシー/主演:ヒュー・ジャックマン</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 film-title">レ・ミゼラブル</h3>
+              <div class="mb-1 text-muted">2019-03-01</div>
+              <div class="star-rating mb-1">
+                <div class="star-rating-front" style="width: 100%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <p class="card-text mb-auto">2012年12月21日公開/イギリス/監督:トム・フーパー/主演:ヒュー・ジャックマン</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 film-title">ラ・ラ・ランド</h3>
+              <div class="mb-1 text-muted">2019-03-01</div>
+              <div class="star-rating mb-1">
+                <div class="star-rating-front" style="width: 80%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <p class="card-text mb-auto">2016年公開/アメリカ/監督:デミアン・チャゼル/主演:ライアン・ゴズリング,エマ・ストーン</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 film-title">ショーシャンクの空に</h3>
+              <div class="mb-1 text-muted">2019-03-01</div>
+              <div class="star-rating mb-1">
+                <div class="star-rating-front" style="width: 60%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <p class="card-text mb-auto">1994年公開/アメリカ映画/監督:フランク・ダラボン/主演:ティム・ロビンス</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 film-title">建築学概論</h3>
+              <div class="mb-1 text-muted">2019-03-01</div>
+              <div class="star-rating mb-1">
+                <div class="star-rating-front" style="width: 100%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <p class="card-text mb-auto">2012年公開/監督:イ・ヨンジュ/主演:イ・ジェフン,ぺ・スジ(miss A)</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 film-title">私の頭の中の消しゴム</h3>
+              <div class="mb-1 text-muted">2019-03-01</div>
+              <div class="star-rating mb-1">
+                <div class="star-rating-front" style="width: 60%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <p class="card-text mb-auto">2004年公開/監督:イ・ジェハン/主演:チョン・ウソン,ソン・イェジン</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 film-title">ビューティー・インサイド</h3>
+              <div class="mb-1 text-muted">2019-03-01</div>
+              <div class="star-rating mb-1">
+                <div class="star-rating-front" style="width: 100%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <p class="card-text mb-auto">2015年8月公開/監督:パク・ジョンヨル/主演:ハン・ヒョジュ</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- コンテンツここまで -->
+      </div>
+
+      <hr class="featurette-divider">
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="blog-footer">
+    <p>Movierium 2019.3</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+    <!-- 外部jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
